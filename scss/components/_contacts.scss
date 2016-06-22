@@ -1,0 +1,15 @@
+.contacts{
+	&__text{
+		float: left;
+		padding-top: 15px;
+		padding-right: 40px;
+		display: inline-block;
+		margin: 0;
+		&:last-child{
+			padding-right: 0;
+		}
+	}
+	&__icon{
+		padding-right: 10px;
+	}
+}

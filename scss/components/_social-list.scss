@@ -1,0 +1,75 @@
+.social{
+	&__list{
+		float: right;
+		margin: 0;
+		padding: 0;
+	}
+	&__item{
+		display: inline-block;
+		margin-right: -4px;
+	}
+	&__link{
+		color: #FFF;
+		display: inline-block;
+		width: 30px;
+		height: 40px;
+		position: relative;
+		&:hover{
+    		color: #fff;
+    	}
+	}
+	&__icon{
+		font-size: 18px;
+		position: absolute;
+    	top: 50%;
+   	 	left: 50%;
+   	 	transform: translate(-50%, -50%);
+    	display: block;
+    	font-size: 14px;
+    	font-family: 'icomoon';
+
+	}
+	&__tw{
+		background-color: #55acee;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#55acee,10%);
+
+    	}
+	}
+	&__fb{
+		background-color: #3b5998;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#3b5998,10%);
+    	}
+	}
+	&__ball {
+		background-color: #eb6397;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#eb6397,10%);
+    	}
+	}
+	&__google{
+		background-color: #de5745;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#de5745,10%);
+    	}
+	}
+	&__p-soc{
+		background-color: #d94348;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#d94348,10%);
+    	}
+	}
+	&__be-soc{
+		background-color: #3079ff;
+		transition: all 0.4s;
+		&:hover{
+    		background: lighten(#3079ff,10%);
+    	}
+	}
+}

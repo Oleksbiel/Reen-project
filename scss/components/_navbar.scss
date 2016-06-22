@@ -1,0 +1,68 @@
+.nav{
+	padding: 35px 0;
+
+	&__logo{
+		display: inline-block;
+	}
+	&__menu{
+		padding: 0;
+		margin: 0;
+		float: right;
+	}
+	&__item{
+		display: inline-block;
+		margin-top: 10px;
+		position: relative;
+		&:last-child{
+			padding-right: 20px;
+		}
+		&:hover > ul{
+			display: block;
+		}
+	}
+	&__link{
+		padding: 20px;
+		color: $text-color;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		&:hover{
+			color: $brand-primary;
+			background-color: #f5f7fa;
+			text-decoration: none;
+			box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+		}
+	}
+	&__form{
+		float: right;
+	}
+}
+.nav-sub{
+	position: absolute;
+	top: 37px;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	white-space: nowrap;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	display: none;
+	z-index: 5;
+	&__item{
+		background-color: #f5f7fa;
+	}
+	&__link{
+		padding: 15px 30px 15px 20px;
+		color: $text-color;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		display: block;
+		&:hover{
+			color: #fff;
+			background-color: $brand-primary;
+			text-decoration: none;
+
+
+		}
+	}
+}

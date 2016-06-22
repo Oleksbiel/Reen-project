@@ -1,0 +1,204 @@
+
+// Core variables and mixins
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/variables";
+@import "custom/_variables";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/normalize";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/print";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/scaffolding";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/type";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/code";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/grid";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/tables";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/forms";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/buttons";
+
+// Components
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/component-animations";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/dropdowns";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/button-groups";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/input-groups";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/navs";
+//@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/navbar";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/breadcrumbs";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/pagination";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/pager";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/labels";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/badges";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/jumbotron";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/thumbnails";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/alerts";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/progress-bars";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/media";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/list-group";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/panels";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/responsive-embed";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/wells";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/close";
+
+// Components w/ JavaScript
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/modals";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/tooltip";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/popovers";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/carousel";
+
+// Utility classes
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/utilities";
+@import "../bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/responsive-utilities";
+
+//////// My components
+
+@import "components/contacts";
+@import "icon-variables";
+@import "icon-style";
+@import "components/social-list";
+@import "components/navbar";
+@import "components/heading";
+@import "components/features";
+@import "components/cards";
+@import "components/footer";
+
+////////////SCSS
+
+
+.container {
+	&--second-bg{
+		background: $second-bg;
+	}
+	&--shadow{
+		box-shadow: 0 1px 0 #e6e9ed;
+	}
+	&--height-sm {
+		height: 40px;
+	}
+}
+.block{
+	&--sm{
+		padding: 30px 0;
+	}
+	&--md{
+		padding: 100px 0;
+	}
+	&--lg {
+		padding: 120px 0;
+	}
+	&--second-bg{
+		background: #f2f5f7;
+	}
+	&--footer-top-bg{
+		background-color: #2f4052;
+	}
+	&--footer-bottom-bg{
+		background-color: #283645;
+	}
+	&--relative{
+		position: relative;
+	}
+}
+.carousel{
+	.carousel-control {
+		.icon-arrow{
+			position: absolute;
+			top: 50%;
+			&:hover{
+				padding: 15px;
+    			margin-top: -15px;
+    			margin-left: -15px;
+				background-color: #506a85;
+				border-radius: 3px 2px 2px 3px;
+				color: $brand-primary;
+			}
+		}
+
+	}
+	.carousel-control.left{
+		background-image: none;
+	}
+	.carousel-control.right{
+		background-image: none;
+	}
+	.carousel-indicators{
+		position: absolute;
+	    bottom: 10px;
+	    left: 50%;
+	    z-index: 15;
+	    margin-left: -30%;
+	    padding-left: 0;
+	    list-style: none;
+	    text-align: center;
+	    bottom: -10px;
+	    margin: 0;
+	    display: inline-block;
+	    background: #fff;
+	    border-radius: 2px;
+	    padding: 15px 15px 0 15px;
+	    margin-left: -72px;
+	    width: auto;
+	    li {
+	    	display: inline-block;
+		    width: 15px;
+		    height: 15px;
+		    text-indent: -999px;
+		    border-radius: 10px;
+		    cursor: pointer;
+		    background-color: #000 \9;
+		    background-color: transparent;
+		    background-color: #506a85;
+		    margin-right: 5px;
+    	}
+    	.active {
+    		width: 15px;
+		    height: 15px;
+		    background: $brand-primary;
+
+    	}
+	}
+	&__content{
+		background: url(../images/slider-1.jpg) no-repeat;
+		background-size: cover;
+		min-height: 880px;
+		&--slide-2{
+			background: url(../images/slider-2.jpg) no-repeat;
+		}
+		&--slide-5{
+			background: url(../images/slider-5.jpg) no-repeat;
+		}
+	}
+	&__headline{
+		color: #fff;
+		line-height: 78px;
+		padding-top: 300px;
+		margin: 0;
+		&--padding-top{
+			padding-top: 90px;
+		}
+	}
+	&__text{
+		color: #a3b1bf;
+		line-height: 34px;
+		padding-bottom: 40px;
+	}
+}
+
+.btn {
+	text-transform: uppercase;
+	font-weight: 700
+}
+.arrow-up{
+	
+	&__icon{
+		transform: rotate(-90deg);
+		position: absolute;
+		padding: 15px;
+		background-color: #506a85;
+		border-radius: 3px 2px 2px 3px;
+		color: $brand-primary;
+		top: 20px;
+		right: 50px;
+	}
+}

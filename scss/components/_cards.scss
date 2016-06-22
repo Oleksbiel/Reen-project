@@ -1,0 +1,57 @@
+.cards{
+	&--padding{
+		padding: 70px 0;
+	}
+	
+	
+	&__card{
+		&:hover .cards__bg, &:hover .cards__icon {
+			display: block;
+		}
+		&:hover .cards__title {
+			color: $brand-primary;
+		}
+		&--float-left{
+		float: left;
+		}
+		&--padding-right{
+			padding-right: 5px;
+		}
+		&--padding-bottom{
+			padding-bottom: 5px;
+		}
+	}
+	&__bottom{
+		padding: 30px;
+	    background: #fff;
+	    text-align: center;
+	}
+	&__title{
+
+	}
+	&__text{
+
+	}
+	&__img{
+		position: relative;
+	}
+	&__icon{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color: #fff;
+		display: none;
+	}
+	&__bg{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: $brand-primary;
+		opacity: 0.7;
+		display: none;
+	}
+
+}

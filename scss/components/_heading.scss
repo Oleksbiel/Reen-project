@@ -1,0 +1,12 @@
+.heading{
+	&__title{
+
+	}
+	&__text{
+		font-size: 22px;
+		line-height: 34px;
+		&--pd-bottom{
+			padding-bottom: 20px;
+		}
+	}
+}
